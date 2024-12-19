@@ -1,0 +1,48 @@
+/* General body styling */
+body {
+    background-color: #f8f9fa;
+  }
+  
+  /* Heading styles */
+  h1, h3 {
+    color: #333;
+  }
+  
+  /* Game board styling */
+  .game-board {
+    margin-top: 30px;
+  }
+  
+  /* Circle buttons */
+  .btn-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  /* Colors for buttons */
+  .red {
+    background-color: #dc3545;
+  }
+  
+  .green {
+    background-color: #28a745;
+  }
+  
+  .yellow {
+    background-color: #ffc107;
+  }
+  
+  .blue {
+    background-color: #007bff;
+  }
+  
+  /* Flash effect */
+  .flash {
+    opacity: 0.5;
+  }
+  

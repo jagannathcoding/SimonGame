@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f0f0;
+    }
+    h1 {
+      margin-top: 20px;
+    }
+    .game-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 300px;
+      margin: 20px auto;
+    }
+    .btn-circle {
+      width: 100px;
+      height: 100px;
+      margin: 5px;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+    .btn-circle.red {
+      background-color: red;
+    }
+    .btn-circle.green {
+      background-color: green;
+    }
+    .btn-circle.yellow {
+      background-color: yellow;
+    }
+    .btn-circle.blue {
+      background-color: blue;
+    }
+    .flash {
+      opacity: 0.5;
+    }
+    #game-status, #score {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+    #start-btn {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Simon Game</h1>
+  <div id="score">Score: 0</div>
+  <div id="game-status">Press Start to Play</div>
+  <button id="start-btn">Start Game</button>
+  <div class="game-container">
+    <button class="btn-circle red" id="red"></button>
+    <button class="btn-circle green" id="green"></button>
+    <button class="btn-circle yellow" id="yellow"></button>
+    <button class="btn-circle blue" id="blue"></button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
